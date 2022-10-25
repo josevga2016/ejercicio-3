@@ -1,0 +1,30 @@
+git remote add origin https://github.com/josevga2016/ejercicio-3.git
+git branch -M main
+git push -u origin main//PRIMERA PARTE: FUNCION SUMA CON TRES PARAMETROS
+
+class sumatoria {
+    public static void main(String[] args) {
+        int a = 17;
+        int b = 18;
+        int c = 15;
+        suma(a, b, c);
+    }
+    public static void  suma (int a, int b, int c) {
+        int resultado;
+        resultado = a + b + c;
+        System.out.println("la sumatoria de las variables a, b y c es " + resultado);
+    }
+}
+
+//SEGUNDA PARTE: CLASE COCHE
+
+class coche {
+    public static void main(String[] args) {
+        coche micoche= new coche();
+        micoche.aumentarpuertas();
+        System.out.println("el numero de puertas del coche son " + micoche.puertas);
+    }
+    public int puertas = 4;
+    public void aumentarpuertas(){
+    this.puertas ++;
+    }
